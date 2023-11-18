@@ -37,7 +37,7 @@ class RollViewController: UIViewController {
         //
         //        present(controller, animated: true, completion: nil)
         
-        performSegue(withIdentifier: "DiceViewController", sender: self)
+        performSegue(withIdentifier: "rollDice", sender: self)
     }
     
     
