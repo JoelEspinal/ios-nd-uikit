@@ -16,6 +16,7 @@
 		4D08C4921A12860200A95F43 /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D08C4911A12860200A95F43 /* ColorizerTextFieldDelegate.swift */; };
 		9B6B08152B16B64600744542 /* RandomColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B08142B16B64600744542 /* RandomColorTextFieldDelegate.swift */; };
 		9B6B08172B16D44400744542 /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B08162B16D44400744542 /* ZipCodeDelegate.swift */; };
+		9B6B08192B16D90F00744542 /* ChashDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B08182B16D90F00744542 /* ChashDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4D08C4911A12860200A95F43 /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
 		9B6B08142B16B64600744542 /* RandomColorTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorTextFieldDelegate.swift; sourceTree = "<group>"; };
 		9B6B08162B16D44400744542 /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
+		9B6B08182B16D90F00744542 /* ChashDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChashDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				4D08C48F1A126EC400A95F43 /* EmojiTextFieldDelegate.swift */,
 				4D08C4911A12860200A95F43 /* ColorizerTextFieldDelegate.swift */,
 				9B6B08142B16B64600744542 /* RandomColorTextFieldDelegate.swift */,
+				9B6B08182B16D90F00744542 /* ChashDelegate.swift */,
 			);
 			name = "Text Field Delegates";
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6B08192B16D90F00744542 /* ChashDelegate.swift in Sources */,
 				4D08C4921A12860200A95F43 /* ColorizerTextFieldDelegate.swift in Sources */,
 				9B6B08172B16D44400744542 /* ZipCodeDelegate.swift in Sources */,
 				4D08C4721A126D0300A95F43 /* ViewController.swift in Sources */,

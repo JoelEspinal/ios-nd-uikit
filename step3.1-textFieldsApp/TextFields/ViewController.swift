@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField4: UITextField!
     
     @IBOutlet weak var textField5: UITextField!
+    @IBOutlet weak var textField6: UITextField!
     
     @IBOutlet weak var characterCountLabel: UILabel!
     
@@ -26,6 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let emojiDelegate = EmojiTextFieldDelegate()
     let colorizerDelegate = ColorizerTextFieldDelegate()
     let randomDelegate = RandomColorTextFieldDelegate()
+    let cashDelegate = ChashDelegate()
     
     let zipCodeDelegate = ZipCodeDelegate()
     
@@ -44,6 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.textField4.delegate = randomDelegate
         
         self.textField5.delegate = zipCodeDelegate
+        self.textField6.delegate = cashDelegate
     }
     
     // MARK: Text Field Delegate Methods
