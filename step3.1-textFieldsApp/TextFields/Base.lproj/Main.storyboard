@@ -34,6 +34,14 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDx-3b-KAM">
+                                <rect key="frame" x="16" y="510" width="294" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bRe-kx-4GJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSq-LM-rJE">
                                 <rect key="frame" x="16" y="403" width="361" height="30"/>
                                 <constraints>
@@ -76,12 +84,21 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qUn-CD-28r">
+                                <rect key="frame" x="330" y="510" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="canEdittingText:" destination="vXZ-lx-hvc" eventType="valueChanged" id="DRr-Vx-Ajz"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.58709395559210531" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="b5d-35-VHU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="21H-QM-esp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VDx-3b-KAM" secondAttribute="trailing" constant="67" id="4Z1-SH-yb6"/>
                             <constraint firstItem="GC3-pC-feL" firstAttribute="top" secondItem="DSq-LM-rJE" secondAttribute="bottom" constant="22" id="6Lw-os-w9U"/>
                             <constraint firstItem="b5d-35-VHU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="CDF-pd-P9F"/>
+                            <constraint firstItem="VDx-3b-KAM" firstAttribute="top" secondItem="GC3-pC-feL" secondAttribute="bottom" constant="25" id="D8t-ue-5Rl"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Qug-dD-YnJ" secondAttribute="bottom" constant="440" id="Evp-BM-UuF"/>
                             <constraint firstItem="DSq-LM-rJE" firstAttribute="leading" secondItem="Qug-dD-YnJ" secondAttribute="leading" id="MSl-L5-fSK"/>
                             <constraint firstItem="FND-fQ-FKU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="MX8-Wf-RzC"/>
@@ -98,6 +115,7 @@
                             <constraint firstItem="x8x-lW-EqZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="k04-Jr-pgf"/>
                             <constraint firstItem="FND-fQ-FKU" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="oAk-yx-rSh"/>
                             <constraint firstItem="GC3-pC-feL" firstAttribute="trailing" secondItem="DSq-LM-rJE" secondAttribute="trailing" id="qdf-f8-UEC"/>
+                            <constraint firstItem="VDx-3b-KAM" firstAttribute="leading" secondItem="GC3-pC-feL" secondAttribute="leading" id="sde-hk-u8Z"/>
                             <constraint firstItem="DSq-LM-rJE" firstAttribute="top" secondItem="Qug-dD-YnJ" secondAttribute="bottom" constant="25" id="zP9-U9-bYi"/>
                         </constraints>
                     </view>
@@ -109,11 +127,12 @@
                         <outlet property="textField4" destination="Qug-dD-YnJ" id="q0u-ft-8Pp"/>
                         <outlet property="textField5" destination="DSq-LM-rJE" id="Dbj-2Z-sPP"/>
                         <outlet property="textField6" destination="GC3-pC-feL" id="mMD-Ej-rPX"/>
+                        <outlet property="textField7" destination="VDx-3b-KAM" id="pAe-Yk-vPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-193.89312977099235" y="221.83098591549296"/>
+            <point key="canvasLocation" x="-194.6564885496183" y="221.83098591549296"/>
         </scene>
     </scenes>
 </document>

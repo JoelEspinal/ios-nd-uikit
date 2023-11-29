@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var textField5: UITextField!
     @IBOutlet weak var textField6: UITextField!
+    @IBOutlet weak var textField7: UITextField!
     
     @IBOutlet weak var characterCountLabel: UILabel!
     
@@ -47,6 +48,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         self.textField5.delegate = zipCodeDelegate
         self.textField6.delegate = cashDelegate
+    }
+    
+    
+    @IBAction func canEdittingText(_ sender: UISwitch) {
+        textField7.isEnabled = sender.isOn
     }
     
     // MARK: Text Field Delegate Methods
