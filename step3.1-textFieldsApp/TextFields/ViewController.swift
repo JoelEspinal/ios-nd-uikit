@@ -17,12 +17,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
     @IBOutlet weak var textField4: UITextField!
+    
+    @IBOutlet weak var textField5: UITextField!
+    
     @IBOutlet weak var characterCountLabel: UILabel!
     
     // MARK: Text Field Delegate objects
     let emojiDelegate = EmojiTextFieldDelegate()
     let colorizerDelegate = ColorizerTextFieldDelegate()
     let randomDelegate = RandomColorTextFieldDelegate()
+    
+    let zipCodeDelegate = ZipCodeDelegate()
     
     // MARK: Life Cycle
     
@@ -37,6 +42,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.textField2.delegate = colorizerDelegate
         self.textField3.delegate = self
         self.textField4.delegate = randomDelegate
+        
+        self.textField5.delegate = zipCodeDelegate
     }
     
     // MARK: Text Field Delegate Methods
